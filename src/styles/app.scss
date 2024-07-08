@@ -2,12 +2,12 @@
 @import "dashboard";
 @import "product";
 @import "customer";
-@import "newProduct";
-@import "manageTransaction";
+@import "newproduct";
+@import "managetransaction";
 @import "charts";
-@import "LineChart";
+@import "linechart";
 @import "application";
-@import "mediaQueries";  // make file with _  and import without it  
+@import "mediaqueries";  // make file with _  and import without it  
 // files with underscores will not be compiled rather just imported
 
 :root {

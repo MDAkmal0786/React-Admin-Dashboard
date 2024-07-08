@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+import {  useMemo, useState } from "react"
 import AdminSidebar from "../components/AdminSidebar"
 
 let a:number;
@@ -70,7 +70,7 @@ const StopWatch = () => {
            <button onClick={StartStopHandler}>{(isStarted)?"Stop":"Start"}</button>
            <button onClick={()=>{
                clearInterval(a);
-               setSecond((prev)=>prev=0);
+               setSecond(0);
                setIsStarted(false);
            }}>Reset</button>
            </div>

@@ -2,7 +2,6 @@ import { Column } from "react-table"
 import AdminSidebar from "../components/AdminSidebar"
 import { ReactElement, useCallback, useState } from "react"
 import TableHOC from "../components/TableHOC";
-import { MdDelete } from "react-icons/md";
 import { FaTrash } from "react-icons/fa";
 
 interface dataType{
@@ -70,7 +69,7 @@ const Customer = () => {
 
   let[data] = useState<dataType[]> ( arr ) ;
 
-  let table = useCallback(TableHOC<dataType> ( column , data , "dashboard-customer-box" , "Customers" ) , [] ) ;
+  let table = useCallback(TableHOC<dataType> ( column , data , "Customers" ) , [] ) ;
   return (
     <div className="adminContainer" >
 

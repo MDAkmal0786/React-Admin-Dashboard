@@ -65,7 +65,7 @@ const Product = () => {
   let[data] = useState<dataType[]>(arr);
   
    let table = useCallback(
-    TableHOC<dataType>(column , data , "dashboard-product-box" , "Products" ) , []
+    TableHOC<dataType>(column , data  , "Products" ) , []
    );
     
   return (

@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from 'react'
+import  { ChangeEvent, useState } from 'react'
 import AdminSidebar from '../../components/AdminSidebar'
 
 
@@ -56,6 +56,10 @@ const NewProducts = () => {
      
 
       <button type='submit'>Create</button>
+
+      {
+        photo&&<img src={photo} alt="new"/>
+      }
 
 
      </form>

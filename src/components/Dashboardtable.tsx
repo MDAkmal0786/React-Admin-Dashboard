@@ -32,7 +32,7 @@ const columns:Column<dataType>[] =[
 ];
 
 const Dashboardtable = ({data=[]}:{data:dataType[]}) => {
-  return  TableHOC<dataType>(columns,data,"transaction-Box" , "Top Transaction") ( ) ; // calling for get jsx as function is returning                                                                                                                            funtion 
+  return  TableHOC<dataType>(columns,data, "Top Transaction") ( ) ; // calling for get jsx as function is returning                                                                                                                            funtion 
   
 }
 

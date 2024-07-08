@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { IconType } from "react-icons"
 import { AiFillFileText } from "react-icons/ai";
-import { BsGraphUpArrow } from "react-icons/bs";
-import { CiMenuBurger } from "react-icons/ci";
+
 import { FaChartBar, FaChartLine, FaChartPie, FaGamepad, FaStopwatch } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
+
 import { IoIosPeople } from "react-icons/io";
 import { MdDashboard } from "react-icons/md";
 import { RiCoupon3Fill, RiShoppingBag3Fill } from "react-icons/ri";

@@ -1,7 +1,7 @@
-import { IoMdNotificationsOutline } from "react-icons/io"
+
 import AdminSidebar from "../components/AdminSidebar"
 import { BsSearch } from "react-icons/bs"
-import { IoSearchOutline } from "react-icons/io5"
+
 import { FaRegBell } from "react-icons/fa"
 import { FaArrowTrendDown, FaArrowTrendUp } from "react-icons/fa6"
 

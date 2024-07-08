@@ -1,7 +1,7 @@
-import React from 'react'
+
 import { Column, useTable , useSortBy , usePagination   } from 'react-table'
 
-function TableHOC<T extends Object> (columns:Column<T>[] , data : T[] , containerClassname:string , heading : string ) {  // generic for user to give any column and data of row
+function TableHOC<T extends Object> (columns:Column<T>[] , data : T[] ,  heading : string ) {  // generic for user to give any column and data of row
   // so we have to mention type in typescript   so   column,data is array of object which user will specify {name:"nnc",}
 
   return function HOC( ) {

@@ -1,6 +1,6 @@
-import { ReactElement, useState } from "react";
-import AdminSidebar from "../../components/AdminSidebar"
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import AdminSidebar from "../../components/AdminSidebar";
 
 interface orderItemType{
 
@@ -69,7 +69,7 @@ const ManageTransaction = () => {
 
   } ) ;
 
-  let{name , adress , city , state , country , pincode , subTotal , tax , shippingCharges , discount , total , status , _id} = order ;
+  let{name , adress , city , state , country , pincode , subTotal , tax , shippingCharges , discount , total , status } = order ;
   return (
     <div className="adminContainer" >
 

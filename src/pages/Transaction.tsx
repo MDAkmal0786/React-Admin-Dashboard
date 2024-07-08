@@ -73,7 +73,7 @@ const Transaction = () => {
 
   let [data] = useState<dataType[]>(arr) ;
 
-  let table = TableHOC<dataType>(column , data , "transaction-box" , "Transactions") ;
+  let table = TableHOC<dataType>(column , data , "Transactions") ;
   return (
     <div className="adminContainer" >
 

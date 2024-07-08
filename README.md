@@ -1,3 +1,8 @@
+#React dashboard made by react + typescript + react charts + react tables + sass
+![Screenshot 2024-07-08 103929](https://github.com/MDAkmal0786/react-admin-dashboard/assets/128128594/40535949-c058-4118-9928-b8845306c29f)
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

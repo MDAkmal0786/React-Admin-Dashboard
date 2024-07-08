@@ -7,7 +7,8 @@
 @import "charts";
 @import "LineChart";
 @import "application";
-@import "_mediaQueries";
+@import "mediaQueries";  // make file with _  and import without it  
+// files with underscores will not be compiled rather just imported
 
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

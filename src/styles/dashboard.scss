@@ -1,0 +1,187 @@
+.dashboard {
+
+    overflow-y : auto ;
+
+    .bar{
+        border-bottom : 1px solid rgba(0,0,0,0.37) ;
+
+        @include flex ( row , unset  ) ;
+
+        padding : 0 1rem ;
+        height: 4rem;
+
+        svg{
+            font-size: 1.2rem;
+            opacity: 0.7;
+        }
+        
+    }
+
+    .widgetcontainer{
+        
+
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+
+        padding: 2rem 2rem 2rem 0;
+
+        .widget{
+            width: 16rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.132);
+            padding: 2rem;
+            @include flex ( row , unset , stretch , 0);
+
+            .widgetInfo{
+                >p{
+                    opacity: 0.7;
+                    font-size: 0.8rem;
+                }
+                >h4{
+                    font-size:1.5rem;
+                }
+                >span{
+                    @include flex(row , unset ,center , 0.2rem);
+                }
+            }
+
+            .widgetCircle{
+                 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 5rem;
+                width: 5rem;
+                border-radius: 50%;
+
+                >span{
+                    background-color: white;
+                    border-radius: 50%;
+                    height: 4rem;
+                    width: 4rem;
+                    display: grid;
+                    place-items: center;
+                }
+             
+            }
+
+        }
+    }
+
+    .graph-container{
+        padding: 0 2rem 2rem 0 ;
+        @include flex ( row , center , unset , 2rem ) ;
+
+        >div{
+            background-color: white;
+            border-radius: 10px ;
+            >h2{
+                letter-spacing: 3px;
+                font-weight: 300;
+         }
+        }
+        .revenue-chart{
+          
+         padding: 1rem 3rem;
+         width: 100%; //   t h e   s p a c e    l e f t    t a k e    w h o l e
+        >h2{
+            text-align: center;
+            margin: 1rem 0 2rem 0.25rem;
+        }
+
+        }
+        .dashboard-categories{
+
+            width : 100% ;
+            max-width : 30rem ;
+            @include flex ( column , center , unset , 0 ) ;
+            padding-bottom : 2rem  ;
+
+            >h2{
+                margin : 1.5rem 0 2rem 0 ;
+                text-align : center ;   
+            }
+            >div{
+                overflow-y : auto ;
+                padding-left : 0.5rem ;
+
+                .category-item {
+                    @include flex ( row , space-between , center , 1rem ) ;
+
+                    padding: 1rem;
+
+                    >div{
+                        background-color: rgb(217,217,217) ;
+                        border-radius: 20px;
+                        width: 6rem;
+                        margin-left : auto;
+                        height: 0.5rem;
+                        flex: none;
+                    }
+
+                    >span{
+                            font-size: 0.8rem;
+                            font-weight: 700;
+                    }
+                      
+                       
+                }
+            }
+
+        }
+    }
+
+    .transaction-container{
+        padding: 0 2rem 2rem 0 ;
+
+        display: flex;
+        gap: 2rem;
+        height: 30rem;
+
+        >div{
+            background-color: white;
+            box-shadow:0 10px 10px rgba(0,0,0,0.132) ;
+            border-radius: 10px;
+
+        }
+
+        .gender-chart{
+          
+            max-width: 20rem;
+            padding : 1rem ;
+            position: relative;
+            >h2{
+                letter-spacing: 3px;
+                font-weight : 300;
+                text-align : center ;
+                margin : 1.5rem 0 2rem 0 ;
+            }
+            >p{
+                position : absolute;
+                top : 50%;
+                left : 50%;
+                transform:translate(-50% , -50%) ;
+                font-size : 2rem;
+                opacity: 0.634;
+            }
+        }
+        .transaction-Box{
+
+            padding : 2.5rem 1rem;
+              width : 100%;
+
+            h2{
+                letter-spacing: 3px;
+                font-weight : 300;
+                text-transform: uppercase;
+                text-align: center;
+               
+            }  
+       }
+    }
+}   

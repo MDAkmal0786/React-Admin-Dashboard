@@ -1,0 +1,49 @@
+img{
+    height: 45px;
+    width: 70px;
+  }
+  .product{
+    background-color: white;
+    padding:4rem 2rem;
+
+   .table{
+    a{
+        background-color: rgba(0,115,255 , 0.1);
+        color: rgb(0,115,255);
+  
+        padding: 0.4rem;
+        border-radius: 10px;  
+        } 
+   }
+   .add{
+    position: fixed;
+
+    top: 32px;
+    right: 32px;
+
+    height: 40px;
+    width: 40px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    background-color: rgb(193, 35, 35);
+    color: white;
+    padding: 0.6rem;
+
+    &:hover{ //                                 W    O   W  referenece current element itself 
+   
+      opacity: 0.8;                             // L  I  G  H  T   Color on   H  O  V  E  R
+
+    }
+
+    
+   }
+  
+  }
+  
+ 

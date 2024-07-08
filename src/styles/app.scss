@@ -1,0 +1,190 @@
+@import "mixin";
+@import "dashboard";
+@import "product";
+@import "customer";
+@import "newProduct";
+@import "manageTransaction";
+@import "charts";
+@import "LineChart";
+@import "application";
+@import "_mediaQueries";
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+input{
+  outline : none ;
+  border : none ;
+  padding: 1 0rem;
+  margin-right: auto;
+  width: 100%;
+}
+ *{
+    padding : 0 ;
+    margin : 0 ;
+    box-sizing : border-box ;
+}  
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.red {
+
+  color : red;
+
+}
+.purple {
+color: rgb(47,0,255);
+}
+.green {
+      color: rgb(0 , 195,0) ;
+}
+
+.adminContainer {
+     
+    @include grid ( 1fr 4fr , 2rem ) ;
+    height : 100vh ;
+    background-color : rgb(247 , 247 , 247) ;
+
+    .burger{   
+      position: fixed;
+      left: 1rem;
+      top: 1rem;
+      z-index: 1;
+      
+      border: none;
+      background-color: white;
+
+      height : 3rem;
+      width : 3rem;
+     border-radius : 50%;
+     padding :  5px;
+
+      display : grid;
+      place-items: center;
+
+      color:#1a75ff ;
+      svg{
+        font-size : xx-large ;
+      }
+      cursor: pointer ;
+    }
+
+    #closeBurger{
+      
+       padding: 0.8rem 5rem;
+       border: none;
+       border-radius: 10px;
+       color: white;
+       background-color: #a80202;
+       margin-left: 2rem;
+    }
+
+
+
+
+
+    >aside{
+
+     background-color : white ;
+      width : 100% ;
+     padding : 1rem ;   
+     overflow-y : auto ; 
+     &::-webkit-scrollbar {
+        display : none ;
+     }
+
+  > div{
+    margin: 2rem 1rem;
+
+    >h5 {
+        
+        opacity : 0.8 ;
+        @include heading ( ) ;
+
+        margin-bottom: 1rem ;
+      
+       
+       
+    } 
+
+    >ul{
+  
+   @include flex ( column , unset , unset , 0.5rem  ) ;
+  list-style: none  ;
+
+   >li{
+    border-radius: 10px ;
+     padding: 0.5rem 1rem;
+
+    >a{
+      @include flex(row , unset  ) ;
+     
+      
+     
+     }
+   }
+
+  
+  
+
+    }
+  }
+
+
+
+    }
+}
+
+.transaction-Box{
+  overflow-y: auto;
+
+.table{ //styling to all tables
+  width: 100%;
+  overflow-y: auto;
+
+  border-collapse: collapse; // to have one simgle border
+  tbody{
+    tr{
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+  }
+  tr,td,th{
+    padding: 1rem ;
+    text-align: left;
+  }
+ thead {
+  th{
+    padding: 2rem 1rem;
+  }
+ }
+
+}
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+  button{
+    padding: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+    
+  }
+  button:disabled{
+    background-color:  rgba(0,0,0,0.08);
+    color: black;
+    cursor:not-allowed;  // cursor not allowed make that red danger sign
+  }
+}

@@ -1,0 +1,28 @@
+.customer{
+    background-color: white;
+    padding:4rem 2rem;
+
+    .table{
+        button{
+            color: red;
+            border: none;
+            height: 40px;
+            width: 40px;
+            background-color: white;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.5;
+            }
+
+            svg{
+                font-size: large    ;
+            }
+
+        }
+        img{
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+        }
+    }
+}

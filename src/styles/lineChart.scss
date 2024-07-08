@@ -1,0 +1,21 @@
+.line-charts-box{
+    background-color: white;
+    padding: 4rem 6rem;
+    padding-bottom: 8rem;
+    overflow-y: scroll;
+    section{
+    max-width:  86.5%;
+    margin: auto; // responsive
+    margin-top: 5rem;
+    
+
+        h2{
+
+            text-align: center;
+            letter-spacing: 2px;
+            font-weight: 200;
+            margin-top: 2rem;
+
+        }
+    }
+}
